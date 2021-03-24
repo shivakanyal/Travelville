@@ -80,6 +80,22 @@
     </ul>
   </section>
 
+  <!-- Section: Search -->
+  <section class="section section-search teal darken-1 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Search Destination</h3>
+          <div class="input-field">
+            <input type="text" class="white grey-text autocomplete" placeholder="Indore,Goa etc...">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!--Import jQuery before materialize.js-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
@@ -87,9 +103,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   <script src="js/materialize.min.js"></script>
+
   <script src="https://kit.fontawesome.com/a7e60fcb21.js" crossorigin="anonymous"></script>
 
   <script>
@@ -104,6 +121,21 @@
       transition: 500,
       interval: 6000
     })
+    // Autocomplete
+    $('.autocomplete').autocomplete({
+      data: {
+        "indore": null,
+        "goa": null,
+        "gwalior": null,
+        "pune": null,
+        "shimla": null,
+        "rishikesh": null,
+        "manali": null,
+        "dehradoon": null,
+        "nainital": null,
+        "ladakh": null,
+      }
+    });
   </script>
 </body>
 
