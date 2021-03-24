@@ -13,7 +13,7 @@
   <title>Custom Materialize Theme</title>
 </head>
 
-<body>
+<body id="home" class="scrollspy">
   <div class="navbar-fixed">
     <nav class="teal">
       <div class="container">
@@ -25,8 +25,8 @@
           <ul class="right hide-on-med-and-down">
             <li><a href="#home">Home</a></li>
             <li><a href="#search">Search</a></li>
-            <li><a href="#ppular">Popular Places</a></li>
-            <li><a href="#gallary">Gallary</a></li>
+            <li><a href="#popular">Popular Places</a></li>
+            <li><a href="#gallery">Gallary</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -81,7 +81,7 @@
   </section>
 
   <!-- Section: Search -->
-  <section class="section section-search teal darken-1 white-text center">
+  <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -129,7 +129,7 @@
 
 
   <!-- Section: Popular -->
-  <section class="section section-popular">
+  <section id="popular" class="section section-popular scrollspy">
     <div class="container">
       <div class="row">
         <h4 class="center"><span class="teal-text">Popular</span> Places</h4>
@@ -204,7 +204,7 @@
   </section>
 
   <!-- Section: Gallary -->
-  <div class="section section-gallary">
+  <div id="gallery" class="section section-gallary scrollspy">
     <div class="container">
       <h4 class="center">
         <span class="teal-text">Photo</span>
@@ -256,7 +256,7 @@
   </div>
 
   <!-- Section : Contact -->
-  <div class="section section-contact">
+  <div id="contact" class="section section-contact scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12 m6">
@@ -302,9 +302,11 @@
     </div>
   </div>
 
+  <!-- Footer -->
 
-
-
+  <footer class="section teal darken-2 white-text center">
+    <p class="flow-text">Trevelville &copy; 2021</p>
+  </footer>
 
 
 
@@ -348,6 +350,7 @@
         "ladakh": null,
       }
     });
+    $('.scrollspy').scrollSpy();
   </script>
 </body>
 
